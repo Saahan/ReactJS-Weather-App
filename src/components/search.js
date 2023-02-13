@@ -33,7 +33,7 @@ export default class Search extends React.Component {
   submitCity() {
     const Weather_API_key = "667a02c0339d273699a620c39b57e886";
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${this.state.SearchCity}&limit=5&appid=${Weather_API_key}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${this.state.SearchCity}&limit=5&appid=${Weather_API_key}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
